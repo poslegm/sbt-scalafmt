@@ -26,7 +26,7 @@ inThisBuild(
       )
     ),
     resolvers += Resolver.sonatypeRepo("releases"),
-    scalaVersion := "2.12.6",
+    scalaVersion := "2.12.8",
     publishArtifact in packageDoc := sys.env.contains("CI"),
     publishArtifact in packageSrc := sys.env.contains("CI")
   )
@@ -38,7 +38,7 @@ lazy val plugin = project
   .settings(
     moduleName := "sbt-scalafmt",
     libraryDependencies ++= List(
-      "org.scalameta" %% "scalafmt-dynamic" % "2.0.0-RC5"
+      "org.scalameta" %% "scalafmt-dynamic" % "2.0.0-RC7"
     ),
     sbtPlugin := true,
     scriptedBufferLog := false,
